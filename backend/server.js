@@ -10,7 +10,8 @@ const app = express();
 
 // ✅ CORS Configuration to Allow Frontend Requests
 const corsOptions = {
-    origin: "http://localhost:3000",  // Allow frontend (React)
+    origin: ["http://localhost:3000",
+        "https://devsync-frontend-3ps8.onrender.com"],// Allow frontend (React)
     credentials: true,  // Allow cookies/authentication headers
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],  // Allowed HTTP methods
     allowedHeaders: ["Content-Type", "Authorization"],  // Allowed headers
